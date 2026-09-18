@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+header {
+    background-color: $color-header;
+    min-height: 320px;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 3px solid $color-primary;
+
+    @include flex-center;
+
+    .header-content {
+        max-width: 900px;
+        margin: auto;
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #d9bfa8;
+        }
+    }
+}
